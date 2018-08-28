@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="ekg-m4-iDg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1kH-oh-yqd">
+            <objects>
+                <viewController id="ekg-m4-iDg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dvv-0w-a2W"/>
+                        <viewControllerLayoutGuide type="bottom" id="PjV-gQ-qMy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7vG-uJ-zT5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2V-f9-2sH">
+                                <rect key="frame" x="16" y="270" width="288" height="44"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ROWING CLUB">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="23" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="4"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyW-Nq-IhH">
+                                <rect key="frame" x="16" y="230" width="288" height="65"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="GALATA KÜREK">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="19" name="Zapfino"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="galataKurek" translatesAutoresizingMaskIntoConstraints="NO" id="xRD-hB-pNq">
+                                <rect key="frame" x="78" y="79" width="165" height="150"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PjV-gQ-qMy" firstAttribute="top" secondItem="hyW-Nq-IhH" secondAttribute="bottom" constant="273" id="9Qf-f9-Q5C"/>
+                            <constraint firstItem="PjV-gQ-qMy" firstAttribute="top" secondItem="T2V-f9-2sH" secondAttribute="bottom" constant="254" id="9dX-gz-VhM"/>
+                            <constraint firstItem="hyW-Nq-IhH" firstAttribute="leading" secondItem="7vG-uJ-zT5" secondAttribute="leadingMargin" id="AdF-Z8-3O7"/>
+                            <constraint firstItem="T2V-f9-2sH" firstAttribute="trailing" secondItem="7vG-uJ-zT5" secondAttribute="trailingMargin" id="CFN-lp-GPn"/>
+                            <constraint firstItem="T2V-f9-2sH" firstAttribute="top" secondItem="dvv-0w-a2W" secondAttribute="bottom" constant="250" id="JL7-gt-viZ"/>
+                            <constraint firstItem="T2V-f9-2sH" firstAttribute="leading" secondItem="7vG-uJ-zT5" secondAttribute="leadingMargin" id="M0m-MK-2vs"/>
+                            <constraint firstItem="hyW-Nq-IhH" firstAttribute="top" secondItem="dvv-0w-a2W" secondAttribute="bottom" constant="210" id="bWm-lJ-zQp"/>
+                            <constraint firstItem="hyW-Nq-IhH" firstAttribute="trailing" secondItem="7vG-uJ-zT5" secondAttribute="trailingMargin" id="yVS-RU-Cre"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHP-yX-mWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-436" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="galataKurek" width="305" height="302"/>
+    </resources>
+</document>
